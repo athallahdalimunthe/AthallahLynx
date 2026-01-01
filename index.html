@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>AthallahLynx</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+.game-card:hover img {
+  animation: float 1.5s ease-in-out infinite;
+}
+.sound-btn:hover {
+  transform: scale(1.1);
+}
+</style>
+</head>
+
+<body class="bg-black text-white font-light selection:bg-white selection:text-black">
+
+<!-- HERO -->
+<section class="h-screen flex flex-col justify-center items-center text-center">
+  <h1 class="text-6xl md:text-7xl font-medium tracking-widest opacity-70">AthallahLynx</h1>
+  <p class="text-gray-800 text-xs mt-4 tracking-[0.4em]">SITE UNDER CONSTRUCTION</p>
+</section>
+
+<!-- SOCIALS -->
+<section class="max-w-4xl mx-auto text-center pb-20 px-4">
+  <div class="flex justify-center gap-8 text-gray-600 text-sm tracking-widest">
+    <a href="X_LINK" class="hover:text-white transition">X</a>
+    <a href="YT_LINK" class="hover:text-white transition">YT</a>
+  </div>
+  <img src="STUDIO_LOGO_URL" class="w-14 mx-auto mt-8 opacity-40"/>
+</section>
+
+<!-- GAMES -->
+<section class="max-w-5xl mx-auto py-16 px-4">
+  <h2 class="text-center text-gray-700 text-xs tracking-[0.5em] mb-14">PROJECTS</h2>
+
+  <div class="grid md:grid-cols-2 gap-12">
+
+    <div class="game-card border border-gray-900 p-4 rounded-2xl transition hover:border-gray-500">
+      <img src="BALANCE_BOI_COVER_URL" class="rounded-xl opacity-80"/>
+      <p class="text-gray-800 text-[10px] mt-3 tracking-widest">Balance Boi</p>
+    </div>
+
+    <div class="game-card border border-gray-900 p-4 rounded-2xl transition hover:border-gray-500">
+      <img src="STRUXTURE_COVER_URL" class="rounded-xl opacity-80"/>
+      <p class="text-gray-800 text-[10px] mt-3 tracking-widest">Struxture</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- SOUNDS -->
+<section class="max-w-5xl mx-auto py-20 text-center px-4">
+  <h2 class="text-gray-700 text-xs tracking-[0.6em] mb-10">SOUND ARCHIVE</h2>
+  <div class="flex flex-wrap justify-center gap-6">
+
+    <!-- Example sound buttons, duplicate for each WAV you want -->
+    <button class="sound-btn px-4 py-2 border border-gray-900 text-gray-700 text-xs rounded-full transition"
+      onclick="new Audio('SOUND1.wav').play()">SOUND 01</button>
+
+    <button class="sound-btn px-4 py-2 border border-gray-900 text-gray-700 text-xs rounded-full transition"
+      onclick="new Audio('SOUND2.wav').play()">SOUND 02</button>
+
+    <button class="sound-btn px-4 py-2 border border-gray-900 text-gray-700 text-xs rounded-full transition"
+      onclick="new Audio('SOUND3.wav').play()">SOUND 03</button>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center text-gray-900 py-6 text-[9px] tracking-[0.5em] opacity-50">
+  END OF PAGE
+</footer>
+
+</body>
+</html>
